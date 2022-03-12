@@ -1,0 +1,83 @@
+---
+title: Lists & List Comprehensions - A Code-based Review
+slug: backroads-tours
+image: ./images/html-1.png
+date: 2022-05-02
+author: john smith
+category: HTML&CSS
+readTime: 50
+embeddedImages:
+  - ./images/image_1.png
+  - ./images/image_2.png
+  - ./images/image_3.png
+  - ./images/image_4.png
+  - ./images/image_5.png
+---
+
+import { Link } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+
+
+
+
+Hey all, how are you doin? Everything may no be fine, but let's no give up the fight. So I decided to discuss about a feature of Python that's a favorite with many programmers, list comprehensions. Well I'll talk mostly about that. But first I'll discuss a bit about what lists are, and then will go full-on into list comps.
+ Our discussion today will go more or less along the following direction : 
+
+#### Python Arrays vs Lists vs Tuples 
+
+
+1. **List comprehensions – Why?? (list comps vs loops) **
+2. **Nested list comprehensions (vs loops) **
+3. **Final thoughts (& practice, practice, practice!) **
+
+#### Arrays, Lists and Tuples 
+
+Well, those who already know about the above three, this is not a comprehensive discussion about them, I'm just taking three object types in Python (yes everything is an object in Python ;) ) and comparing them so that the readers who are not familiar can get a clear idea of what a list is. 
+
+Arrays are basically fixed-size data records that consists of items stored in computer memory right next to each other. Therefore we call them contiguous data structures. Dan Bader of the brillant python resource realpython.com compares them to a parking lot. Parking lot has a defined, fixed number of parking slots that are right next to each other, much like arrays.
+
+
+<GatsbyImage
+  image={getImage(props.embeddedImages[0])}
+  alt="random stuff"
+  className="first-inline-img"
+/>
+
+
+```python
+import React from 'react'
+
+const Counter = () => {
+  const [count, setCount] = React.useState(0)
+  return (
+    <section className="counter">
+      <h4>show some love to MDX</h4>
+      <h4>likes {count}</h4>
+      <button className="btn btn-danger" onClick={() => setCount(count + 1)}>
+        i like mdx
+      </button>
+    </section>
+  )
+}
+export default Counter
+```
+
+
+
+
+
+
+<blockquote>
+  I'm baby tumblr fanny pack tousled seitan. Man bun shaman yr, bushwick fam
+  hammock williamsburg kombucha keytar VHS. Chambray street art authentic,
+</blockquote>
+
+<blockquote display="info">
+  I'm baby tumblr fanny pack tousled seitan. Man bun shaman yr, bushwick fam
+  hammock williamsburg kombucha keytar VHS. Chambray street art authentic,
+</blockquote>
+
+
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>
